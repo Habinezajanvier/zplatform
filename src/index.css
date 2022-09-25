@@ -1,13 +1,48 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.authForm {
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.authForm > div {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.authForm input, .authForm select {
+  border:none;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 100%
+}
+
+.authForm label{
+  color: #808080
+}
+
+.authForm div .errors {
+  color: #FF6684
+}
+
+.authForm button {
+  margin-top: 25px;
+  width: fit-content
+}
+
+.authForm span {
+  color: #0389FF;
+  cursor: pointer;
 }
